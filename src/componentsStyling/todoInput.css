@@ -1,0 +1,54 @@
+.todo-input {
+    position: relative;
+    width: 100%;
+    /* background-color: hsl(215, 100%, 70%, .3); */
+    font-size: 1.2em;
+    margin-top: .6em;
+}
+.todo-input .input-wrapper {
+    display: inline-block;
+    position: relative;
+}
+.todo-input input[type='text'] {
+    font-size: inherit;
+    background-color: var(--light-color);
+    border-radius: .25em;
+    padding: .2em .3em;
+    border: 0 none;
+    outline: none;
+}
+.todo-input input[type='text']:hover {
+    cursor: text;
+}
+.todo-input input[type='text'] ~ span {
+    position: absolute;
+    top: 0;
+    right: -.05em;
+    display: block;
+    background-color: var(--dark-blue-color);
+    height: 1.55em;
+    width: 1.55em;
+    border-radius: 0 .25em .25em 0;
+    transition: background-color 350ms ease;
+}
+.todo-input input[type='text'] ~ span:hover,
+.todo-input input[type='text'] ~ span:active {
+    cursor: pointer;
+    background-color: var(--blue-color);
+}
+.todo-input input[type='text'] ~ span::before, 
+.todo-input input[type='text'] ~ span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+    background-color: var(--light-color);
+    border-radius: .3em;
+    pointer-events: none;
+}
+.todo-input input[type='text'] ~ span::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+:root {
+    --background-color: #282c34;
+    --dark-color: #212121;
+    --light-color: #f4f4f4;
+
+    --material-blue-color: #2979ff;
+    --blue-color: #1976d2;
+    --dark-blue-color: #1565c0;
+
+    --red-color: #d32f2f;
+    --dark-red-color: #b71c1c;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--light-color);
+    font-family: Ubuntu, sans-serif;
+    font-size: 27px;
+    overflow-x: hidden;
+}
+div > .content-wrapper {
+    padding: 1.75em 0;
+}

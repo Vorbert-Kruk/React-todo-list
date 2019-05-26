@@ -1,0 +1,14 @@
+nav {
+    background-color: var(--dark-color);
+    width: 100vw;
+    font-size: 42px;
+    user-select: none;
+}
+.content-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: .7em 0;
+    text-align: center;
+}
